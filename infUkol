@@ -1,0 +1,33 @@
+# zahrada
+delka_plotu = float(input("Zadejte delku plotu v metrech: "))
+
+def vymera(obvod):
+    sirka = obvod/5
+    vysledek = sirka*(sirka*1.5)
+    return vysledek
+if delka_plotu <= 0:
+    print("Delka musi byt vetsi nez 0 m. Zadejte platnou delku.")
+else:
+    print("Vymera zahrady je ", vymera(delka_plotu), "m.")
+
+# porovnani cisel
+a = 5
+b = 8
+
+def vetsi_cislo(cislo1, cislo2):
+    if cislo1 > cislo2:
+        print(cislo1, "je vetsi nez ", cislo2)
+    elif cislo1 < cislo2:
+        print(cislo2, "je vetsi nez ", cislo1)
+    else:
+        print("Cisla se rovnaji.")
+
+def sude_liche(cislo):
+    if cislo % 2 == 0:
+        print(cislo, "je sude cislo.")
+    else:
+        print(cislo, "je liche cislo.")
+
+vetsi_cislo(a, b)
+sude_liche(a)
+sude_liche(b)
