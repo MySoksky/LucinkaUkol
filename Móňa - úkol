@@ -1,0 +1,35 @@
+import math
+plot=int(input("Plot"))
+šířka=plot/5  # o = 2*(šířka+(1.5*šířka)) => o = 5*šířka
+délka=1.5*šířka
+plocha=délka*šířka
+print("Délka", délka)
+print("Šířka", šířka)
+print("Plocha", plocha)
+prvníčíslo=int(input("První číslo"))
+druhéčíslo=int(input("Druhé číslo"))
+if prvníčíslo == druhéčíslo:
+    print("První číslo se rovná druhému číslu")
+elif prvníčíslo > druhéčíslo:
+    print("První číslo je větší než druhé číslo")
+else:
+    print("První číslo je menší než druhé číslo")
+if prvníčíslo % 2 != 0:
+    print("První číslo je liché")
+else:
+    print("První číslo je sudé")
+if druhéčíslo % 2 != 0:
+    print("Druhé číslo je liché")
+else:
+    print("Druhé číslo je sudé")
+a=float(input("a"))
+b=float(input("b"))
+c=float(input("c"))
+if a > 0 and b > 0 and c > 0:
+    print("Objem =", a*b*c)
+    print("Povrch =", 2*(a*b+a*c+b*c))
+    print("Úhlopříčka 1 =", math.sqrt(a**2+b**2))
+    print("Úhlopříčka 2 =", math.sqrt(a**2+c**2))
+    print("Úhlopříčka 3 =", math.sqrt(b**2+c**2))
+else:
+    print("Neplatné hodnoty")
